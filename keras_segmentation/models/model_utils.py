@@ -11,7 +11,7 @@ from ..predict import predict, predict_multiple, evaluate
 
 
 # source m1 , dest m2
-def transfer_weights(m1, m2, verbose=True):
+def transfer_weights_seg(m1, m2, verbose=True):
 
     assert len(m1.layers) == len(
         m2.layers), "Both models should have same number of layers"
